@@ -20,26 +20,26 @@ public class ExtentReports {
 //create extentreports and attch report
 	
 	ExtentReports extent = new ExtentReports();
-extent.attachReporter(htmlreporter);
+//extent.attachReporter(htmlreporter);
 	
-	ExtentTest test1= extent.createtest("seacrh in google","This is testcase for it");
+	//ExtentTest test1= extent.createtest("seacrh in google","This is testcase for it");
 	
 	
 	WebDriverManager.chromedriver().setup();
 
 	driver = new ChromeDriver();
-	test1.log(Status.INFO,"Starting testcase");
+	//test1.log(Status.INFO,"Starting testcase");
 	driver.manage().window().maximize();
 	driver.get("https://www.google.com/");
-	test1.pass("google browse");
+	//test1.pass("google browse");
 	driver.findElement(By.name("q")).sendKeys("hello");
-	test1.pass("search hello");
+	//test1.pass("search hello");
 	driver.findElement(By.name("btnK")).submit();
 	
-	test1.pass("click done");
+	//test1.pass("click done");
 	driver.close();
 	driver.quit();
-	test1.pass("details search successfully");
+	//test1.pass("details search successfully");
 
 
  }

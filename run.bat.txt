@@ -1,0 +1,2 @@
+cd C:\Users\varsha\workspace\SeleniumFramework
+mvn test
